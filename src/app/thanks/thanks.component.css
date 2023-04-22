@@ -1,0 +1,16 @@
+div {
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  width: 50%;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #6936f5;
+  margin: 0;
+  padding: 0;
+}

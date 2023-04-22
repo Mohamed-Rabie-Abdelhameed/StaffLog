@@ -31,13 +31,13 @@
   width: 16px;
   border-radius: 50%;
   left: 0px;
-  background-color: #ffb800;
+  background-color: #645bff;
 }
 
 .title::before {
   width: 18px;
   height: 18px;
-  background-color: #ffb800;
+  background-color: #645bff;
 }
 
 .title::after {

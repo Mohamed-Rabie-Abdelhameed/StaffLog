@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { EmployeesService } from '../services/employees.service';
 import { Employee } from '../models/employee';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -9,7 +10,7 @@ import { Employee } from '../models/employee';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
-  constructor(private API: EmployeesService) {}
+  constructor(private API: EmployeesService, private router: Router) {}
 
   @ViewChild('addForm')
   addForm!: NgForm;
@@ -27,5 +28,6 @@ export class RegisterComponent {
     }
     );
     this.addForm.reset();
+    this.router.navigate(['/thanks']);
   }
 }
