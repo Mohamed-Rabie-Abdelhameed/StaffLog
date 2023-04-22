@@ -1,0 +1,34 @@
+<div id="out">
+  <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm.value)" class="form">
+    <p class="title">Register</p>
+    <p class="message">Register your attendance.</p>
+
+    <label>
+      <input name="name" required="" placeholder="" type="text" class="input" ngModel />
+      <span>Name</span>
+    </label>
+
+    <label>
+      <input name="id" required="" placeholder="" type="number" class="input" ngModel />
+      <span>Employee ID</span>
+    </label>
+
+    <label>
+      <select name="department" id="dep" class="input" ngModel>
+        <option value="" selected disabled hidden>Department</option>
+        <option>IT</option>
+        <option>Sales</option>
+        <option>HR</option>
+        <option>Marketing</option>
+        <option>Operations</option>
+      </select>
+    </label>
+
+    <button type="submit" class="submit">
+      Submit
+      <div class="arrow-wrapper">
+        <div class="arrow"></div>
+      </div>
+    </button>
+  </form>
+</div>
