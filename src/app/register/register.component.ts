@@ -20,6 +20,7 @@ export class RegisterComponent {
       name: data.name,
       empId: data.id,
       department: data.department,
+      date: new Date(),
     };
     this.API.addEmployee(newEmployee).subscribe((response) => {
       console.log(response);

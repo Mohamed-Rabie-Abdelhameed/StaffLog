@@ -1,0 +1,53 @@
+#out {
+  margin: 20px;
+  padding: 20px;
+  height: calc(100vh - 180px);
+}
+
+#top {
+  background-color: #6936f5;
+  color: white;
+  padding: 20px;
+  border-radius: 25px 25px 0 0;
+}
+
+#top select {
+  background-color: #fff;
+  color: #6936f5;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#top select:focus {
+  outline: none;
+}
+
+#top select option {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6936f5;
+}
+
+table {
+  width: 100%;
+  border-radius: 0 0 25px 25px;
+  background-color: #fff;
+  border-collapse: collapse;
+  color: #462a94;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+}
+
+#shadow {
+  border-radius: 25px;
+  box-shadow: rgba(255, 184, 0, 0.4) 5px 5px, rgba(255, 184, 0, 0.3) 10px 10px,
+    rgba(255, 184, 0, 0.2) 15px 15px;
+}

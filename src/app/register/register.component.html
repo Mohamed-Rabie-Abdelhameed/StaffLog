@@ -1,5 +1,5 @@
 <div id="out">
-  <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm.value)" class="form">
+  <form #addForm="ngForm" (ngSubmit)="onSubmit(addForm.value)" class="form" id="shadow">
     <p class="title">Register</p>
     <p class="message">Register your attendance.</p>
 
@@ -14,7 +14,7 @@
     </label>
 
     <label>
-      <select name="department" id="dep" class="input" ngModel>
+      <select required="" name="department" id="dep" class="input" ngModel>
         <option value="" selected disabled hidden>Department</option>
         <option>IT</option>
         <option>Sales</option>
@@ -24,8 +24,9 @@
       </select>
     </label>
 
-    <button type="submit" class="submit">
+    <button [disabled]="addForm.invalid" type="submit" class="submit">
       Submit
+      
       <div class="arrow-wrapper">
         <div class="arrow"></div>
       </div>

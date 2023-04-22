@@ -3,4 +3,5 @@ export class Employee{
     name!: string;
     empId!: number;
     department!: string;
+    date!: Date;
 }

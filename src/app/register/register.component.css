@@ -160,6 +160,12 @@ button:hover .arrow:before {
   right: 0;
 }
 
+button:disabled {
+  background-color: #ccc;
+  --primary-color: #ccc;
+  cursor: not-allowed;
+}
+
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -178,4 +184,9 @@ button:hover .arrow:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#shadow{
+  border-radius: 25px;
+  box-shadow: rgba(255, 184, 0, 0.4) 5px 5px, rgba(255, 184, 0, 0.3) 10px 10px, rgba(255, 184, 0, 0.2) 15px 15px;
 }

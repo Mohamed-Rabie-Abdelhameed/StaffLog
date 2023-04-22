@@ -1,0 +1,32 @@
+<div id="out">
+  <div id="shadow">
+    <div id="top">
+      <select (change)="onDepartmentSelect($event)">
+        <option value="" selected disabled hidden>Department</option>
+        <option>IT</option>
+        <option>Sales</option>
+        <option>HR</option>
+        <option>Marketing</option>
+        <option>Operations</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Employee ID</th>
+          <th>Department</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of filteredLogs">
+          <td>{{ log.name }}</td>
+          <td>{{ log.empId }}</td>
+          <td>{{ log.department }}</td>
+          <td>{{ formatTime(log.date.toString()) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
